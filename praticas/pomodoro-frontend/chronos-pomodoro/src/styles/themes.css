@@ -1,0 +1,66 @@
+:root {
+  /* ======================
+     GRAYS (Dark Purple Base)
+  ====================== */
+
+  --gray-100: #f1f0ff;
+  --gray-200: #d8d5ff;
+  --gray-300: #b4afff;
+  --gray-400: #6b6a8f;
+  --gray-500: #525170;
+  --gray-600: #3a3954;
+  --gray-700: #29283d;
+  --gray-800: #1a1929;
+  --gray-900: #0f0e17;
+
+  /* ======================
+     PRIMARY (Purple Identity)
+  ====================== */
+
+  --primary-light: #a78bfa;
+  --primary: #7c3aed;
+  --primary-dark: #4c1d95;
+
+  /* ======================
+     LINKS
+  ====================== */
+
+  --link-color: #8b5cf6;
+  --link-hover: #7c3aed;
+
+  /* ======================
+     FEEDBACK COLORS
+  ====================== */
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #38bdf8;
+
+  /* ======================
+     TEXT OVER COLORS
+  ====================== */
+
+  --text-over-primary: #ffffff;
+  --text-over-primary-dark: #f1f0ff;
+  --text-over-primary-light: #0f0e17;
+
+  --text-over-success: #0f0e17;
+  --text-over-warning: #0f0e17;
+  --text-over-error: #ffffff;
+  --text-over-info: #0f0e17;
+
+  /* ======================
+     TEXT COLORS
+  ====================== */
+
+  --text-default: #f1f0ff;
+  --text-muted: #a1a1c2;
+
+  /* ======================
+     DISABLED
+  ====================== */
+
+  --disabled: #525170;
+  --text-disabled: #7a7998;
+}
