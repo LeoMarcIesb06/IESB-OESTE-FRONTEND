@@ -1,6 +1,7 @@
 // src/App.tsx
-import { Container } from './componentes/Container/Container';
-import { Heading } from './componentes/Heading/Heading';
+import { Container } from './componentes/Container';
+import { Heading } from './componentes/Heading';
+import { Logo } from './componentes/Logo';
 import './styles/themes.css';
 import './styles/global.css';
 
@@ -9,7 +10,7 @@ export function App() {
     <>
       {/* Seção 1: Logo */}
       <Container>
-        <Heading>Logo</Heading>
+        <Logo />
       </Container>
 
       {/* Seção 2: Menu */}
