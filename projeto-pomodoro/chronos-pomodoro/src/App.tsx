@@ -1,21 +1,44 @@
-// src/App.tsx
-import { Container } from './componentes/Container';
-import { Heading } from './componentes/Heading';
-import { Logo } from './componentes/Logo';
+import { Container } from './components/Container';
+import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
+
 import './styles/themes.css';
 import './styles/global.css';
 
 export function App() {
   return (
     <>
-      {/* Seção 1: Logo */}
       <Container>
         <Logo />
       </Container>
-
-      {/* Seção 2: Menu */}
       <Container>
-        <Heading>Menu</Heading>
+        <Menu />
+      </Container>
+      <Container>
+        <CountDown />
+      </Container>
+
+      <Container>
+        <form className='form' action=''>
+          <div className='formRow'>
+            <DefaultInput id='meuInput' type='text' />
+          </div>
+
+          <div className='formRow'>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div className='formRow'>
+            <p>Ciclos</p>
+            <p>0 0 0 0 0 0 0</p>
+          </div>
+
+          <div className='formRow'>
+            <button>Enviar</button>
+          </div>
+        </form>
       </Container>
     </>
   );
