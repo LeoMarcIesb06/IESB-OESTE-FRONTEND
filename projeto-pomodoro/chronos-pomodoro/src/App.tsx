@@ -5,7 +5,8 @@ import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
-import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
+import { PlayCircleIcon } from 'lucide-react';
+import { Footer } from './components/Footer';
 
 import './styles/theme.css';
 import './styles/global.css';
@@ -26,6 +27,7 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
+            {/* Voltamos o labelText para 'task' */}
             <DefaultInput
               labelText='task'
               id='meuInput'
@@ -42,15 +44,14 @@ export function App() {
             <Cycles />
           </div>
 
-          {/* Testando os nossos botões dinâmicos */}
           <div className='formRow'>
-            {/* Como o color padrão é 'green', não precisamos passar a prop aqui! */}
-            <DefaultButton icon={<PlayCircleIcon />} color='green' />
-
-            {/* Forçando o botão a ser vermelho e mudando o ícone */}
-            <DefaultButton icon={<StopCircleIcon />} color='red' />
+            <DefaultButton icon={<PlayCircleIcon />} />
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );
